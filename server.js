@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 });
 
 //routes. The /api/experiences is a prefix for all routes in experienceRoutes
-app.use('/api/experiences', experienceRoutes);
+app.use('https://create-experience-api.onrender.com/api/experiences', experienceRoutes);
 
 // connect to mongodb & listen for requests
 mongoose.connect(process.env.MONGO_URI)
